@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>ExeTech Hire Inventory</title>
+</head>
+<body>
+<h1>ExeTech Hire Inventory</h1>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item" aria-current="page">Home</li>
+  </ol>
+</nav>
+<ul>
+{% for department in departments %}
+  <li><a href="{{ department|lower() }}/index.html">{{ department }}</a></li>
+{% endfor %}
+</ul>
+<h6>This page was generated automatically. Please report issues to <a href="mailto:jack.page@exeterguild.com">jack.page@exeterguild.com</a></h6>
+</body>
+</html>
